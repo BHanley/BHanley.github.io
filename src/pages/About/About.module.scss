@@ -1,0 +1,122 @@
+.heading {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.03em;
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-8);
+  color: var(--color-text-primary);
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin-bottom: var(--space-12);
+
+  p {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+    color: var(--color-text-secondary);
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    &:hover {
+      color: var(--color-accent-hover);
+    }
+  }
+}
+
+.section {
+  margin-bottom: var(--space-12);
+  padding-top: var(--space-10);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.sectionTitle {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+// ─── Experience ────────────────────────────────────────────────────
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--space-6);
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+}
+
+.timelineDate {
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  padding-top: 2px;
+}
+
+.timelineRole {
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.timelineCompany {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.timelineDesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}
+
+// ─── Skills ────────────────────────────────────────────────────────
+.skillGroups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.skillGroup {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+}
+
+.skillGroupLabel {
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  padding-top: 5px;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
